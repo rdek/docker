@@ -1,12 +1,12 @@
 # Docker Cheat Sheet
 
-## Searching for docker images:
+### Searching for docker images:
 
 ```bash
 docker search redis
 ```
 
-## Run docker images:
+### Run docker images:
 
 ```bash
 docker run -d redis
@@ -21,19 +21,19 @@ By default, Docker will run the latest version available. If a particular versio
 ---
 
 
-## Check running docker containers:
+### Check running docker containers:
 
 ```bash
 docker ps
 ```
 
-## Provide more informaiton about particular instance:
+### Provide more informaiton about particular instance:
 
 ```bash
 docker inspect <id>
 ```
 
-## Check logs from particular instance:
+### Check logs from particular instance:
 
 ```bash
 docker logs <id>
