@@ -11,7 +11,7 @@ docker search redis
 ```bash
 docker run -d redis
 ```
--d deamonize command (run in background)
+-d detached command (run in background)
 
 ---
 **NOTE**
@@ -76,5 +76,18 @@ docker run -d --name RedisMapped -v <host dir>:<container dir> redis:latest
 **NOTE**
 
 Docker allows you to use $PWD as a placeholder for the current directory.
+
+---
+
+### Run command inside container:
+
+```bash
+docker run -it redis ps
+```
+
+---
+**NOTE**
+
+If it is needed to get inside container with /bin/bash command line, the command at the end of the one-liner should be __bash__
 
 ---
